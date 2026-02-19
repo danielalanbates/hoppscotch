@@ -19,10 +19,11 @@ export type OrganizationPlatformDef = {
   organizationSwitchingEnabled?: boolean
 
   /**
-   * Custom component for the organization sidebar
-   * If provided, will be shown as a sidebar in the layout
+   * Custom component for the organization switcher dropdown
+   * If provided, will be shown as a dropdown in the header (like the instance switcher)
+   * The component should emit 'close-dropdown' when the dropdown should close
    */
-  customOrganizationSidebarComponent?: Component
+  customOrganizationSwitcherComponent?: Component
 
   /**
    * Switch to a specific organization instance or default cloud instance
